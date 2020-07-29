@@ -40,7 +40,7 @@ export default function (baseUrl, token) {
     this.dispatch()
   }
 
-  this.dispatch = debounce((sendBeacon) => {
+  this.dispatch = debounce(() => {
     if (!baseUrl || !token) return;
     const batchSize = 100
     const maxItem = storeApi.count('events')
@@ -50,7 +50,7 @@ export default function (baseUrl, token) {
         break;
       }
 
-      if (sendBeacon) {
+      if (navigator.sendBeacon) {
         const blob = new Blob([JSON.stringify({events: prepared, token})], {
           type: 'application/json',
         })
