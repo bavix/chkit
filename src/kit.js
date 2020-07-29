@@ -2,6 +2,7 @@ import StoreAPI from './store'
 import axios from 'axios'
 import {v4} from 'uuid'
 import {debounce} from 'lodash'
+import cookies from "./cookies";
 
 export default function (baseUrl, token) {
   const storeApi = new StoreAPI('___ch_', localStorage);
@@ -19,7 +20,7 @@ export default function (baseUrl, token) {
   }
 
   this.push = (category, name, label, payload) => {
-    const event = {
+    const event = Object.assign(cookies(), {
       request_url: location.href,
       request_id: v4(),
       category,
@@ -28,7 +29,7 @@ export default function (baseUrl, token) {
       payload: payload || {},
       identify: storeApi.identify(),
       datetime: (new Date()).toISOString()
-    };
+    });
 
     const clientId = storeApi.getProp('client_id');
     if (clientId) {
