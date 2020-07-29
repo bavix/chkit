@@ -1,3 +1,5 @@
+import {v4} from 'uuid';
+
 export default function (prefix, storage) {
   return {
     get(key) {
