@@ -1,6 +1,6 @@
 {
   "name": "@bavix/cozy-house-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Analytics collection kit in cozy house",
   "main": "src/index.js",
   "dependencies": {},
