@@ -21,7 +21,7 @@ export default function (baseUrl, token) {
 
   this.push = (category, name, label, payload) => {
     const event = Object.assign(cookies(), {
-      request_url: location.href,
+      referrer_url: document.referrer,
       request_id: v4(),
       category,
       name,
