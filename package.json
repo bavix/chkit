@@ -1,22 +1,39 @@
 {
-  "name": "chkit",
+  "name": "@bavix/cozy-house-kit",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Analytics collection kit in cozy house",
+  "main": "src/index.js",
+  "dependencies": {},
   "devDependencies": {
     "axios": "^0.19.2",
     "lodash": "^4.17.19",
     "uuid": "^8.3.0",
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bavix/chkit.git"
+  },
+  "keywords": [
+    "cozy",
+    "house",
+    "house",
+    "cozy",
+    "analytics",
+    "service",
+    "services",
+    "cloud",
+    "event",
+    "events"
+  ],
+  "author": "Babichev Maxim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bavix/chkit/issues"
+  },
+  "homepage": "https://github.com/bavix/chkit#readme"
 }
