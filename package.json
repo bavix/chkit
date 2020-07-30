@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bavix/chkit.git"
+    "url": "git+https://github.com/bavix/cozyhouse-js-kit.git"
   },
   "keywords": [
     "cozy",
@@ -33,7 +33,7 @@
   "author": "Babichev Maxim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bavix/chkit/issues"
+    "url": "https://github.com/bavix/cozyhouse-js-kit/issues"
   },
-  "homepage": "https://github.com/bavix/chkit#readme"
+  "homepage": "https://github.com/bavix/cozyhouse-js-kit#readme"
 }
