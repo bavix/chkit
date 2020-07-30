@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    filename: 'analytics.js',
+    filename: 'cozy.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
